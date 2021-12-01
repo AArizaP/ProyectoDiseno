@@ -1,0 +1,561 @@
+.padre {
+  display: grid; 
+
+  grid-template-rows: 8.125em  39.06em 45.313em 40.625em  45.313em;
+  grid-template-columns: 100%;
+  
+  
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+  
+  background-color: lightblue;
+  overflow: hidden;
+  height: 270em;
+}
+/************** DIV PRINCIPAL **************/
+
+h1{
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+}
+
+
+
+header{
+  display: grid; 
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 100%;
+
+  position: relative;
+
+  background-color: white;
+  margin-top: 0;
+  height: 8em;
+  justify-content: space-between;
+  align-items: center;
+
+  
+
+}
+
+.RRSS {
+  margin-left:18.75em;
+}
+
+h1{
+  font-size: 3em;
+}
+
+.logo{
+  height: 7em;
+  width: 8em;
+  margin-left: 3em;
+}
+
+.RRSS img{
+  height: 2em;
+  width: 2em;
+}
+
+/********** MENU *************/
+
+
+.rellenarMenu {
+  width: 100%;
+  height: 1.9375em;
+  background-color: white;
+  
+}
+
+.menu {
+  display: grid; 
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+
+  align-self: start;
+  margin-top: -2px;
+  margin-left: -2.5em;
+
+}
+
+nav{
+  width: 100%;
+  justify-content: center;
+}
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    height: 2.063em;
+
+
+  }
+  
+  nav li a {
+    color: #8C035C;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+  
+  nav li a:hover {
+    background: rgb(235, 232, 232);
+    color: #8C035C;
+  }
+  
+  
+
+
+/*************** CARRUSEL FOTOGRAFIAS *******************/
+
+.carrusel{
+  display: flex;
+  height:40em;
+  width:400%;
+  animation: animacion 25s infinite;
+
+}
+
+.carrusel div{
+  width: inherit;
+  height: inherit;
+}
+
+
+.carrusel img{
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+
+
+@keyframes animacion{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  20% {margin-left: -70%;}
+  40% {margin-left: -150%;}
+
+  60% {margin-left: -230%;}
+  80% {margin-left: -230%;}
+
+  80% {margin-left: -300%;}
+  
+
+}
+
+
+
+/********* INFO PRINCIPAL *********/
+.infoPrincip{
+  padding: 1em;
+  margin-top: 0.8em;
+  padding-top: 2em;
+  padding-bottom: 4.5em;
+  height: 42em;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  background: rgb(51,41,41);
+  background: linear-gradient(180deg, rgb(210,211,202) 0%, rgba(225,204,204,1) 100%);
+
+  }
+
+.infoPrincip div{
+  border: 1px solid black;
+  height: inherit;
+  width: 90%;
+  background-color:#F2F2F2;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.infoPrincip div img{
+  margin-top: 1em;
+  height: 6em;
+  width: 7em;
+
+  border-radius: 70%;
+  object-fit: cover;
+}
+
+.infoPrincip div h1{
+  font-size: 2em;
+}
+
+.info24{
+  margin-top: 3em;
+}
+
+* p {
+  margin: 1em;
+  font-size: 1.375em;
+}
+
+
+/********* INFORMACION TEMPORAL 1 **********/
+.infoTemporal1{
+
+
+  background: rgb(225,204,204);
+  background: linear-gradient(180deg, rgba(225,204,204,1) 0%, rgba(255,255,255,1) 100%);
+  
+  padding: 1em;
+  margin-top: 4em;
+
+  height: 36em;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.infoTemporal1 img{
+  margin-top: 7em;
+  margin-left: 5em;
+}
+
+.infoTemporal1 h1{
+margin-top: 3em;
+}
+
+.contenidoTemp1 p{
+  font-size: 2em;
+}
+
+
+/********* INFORMACION TEMPORAL 2 **********/
+.infoTemporal2{
+
+  background-color:white;
+
+  padding: 1em;
+  
+
+  height: 36em;
+  text-align: center;
+  
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+
+  justify-content: space-between;
+
+}
+
+.infoTemporal2 h1{
+  margin-top: 1.25em;
+}
+
+.infoTemporal2 p{
+  margin-bottom: 4em;
+}
+
+.infoTemporal2 img{
+margin-top: 6.25em;
+margin-left:7.5em;
+align-items: center;
+}
+
+.cuadroTemp2{
+  background-color: #EDE0E0;
+  border: 3px solid rgb(88, 41, 2);
+  border-radius: 5px;
+  margin: 2.777em;
+
+  padding-top: -1.875em;
+
+  -webkit-box-shadow: 0.4375em 0.4375em 1.875em 0.0625em rgba(0,0,0,0.51);
+  -moz-box-shadow: 0.4375em 0.4375em 1.875em 0.0625em rgba(0,0,0,0.51);
+  box-shadow: 0.4375em 0.4375em 1.875em 0.0625em rgba(0,0,0,0.51);
+}
+
+
+
+/********* INFORMACION TEMPORAL 3 **********/
+.infoTemporal3{
+  background-color: #E1CCCC;
+
+  padding: 1em;
+
+  margin-top: -7.5em;
+  height: 36em;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+
+}
+
+.infoTemporal3 iframe{
+  margin-left: 2em;
+  margin-top: 4em;
+  align-items: center;
+  -webkit-box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+  -moz-box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+  box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+}
+
+.contenidoTemp3 p{
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bolder;
+ 
+}
+
+.infoTemporal3 div p.email{
+  color: #99166b;
+    
+}
+
+.infoTemporal3 div p.direccion{
+  color: rgb(58, 59, 71);
+}
+
+.infoTemporal3 div p.telefono{
+  color: #242fcc;
+}
+
+/********* INFORMACION TEMPORAL 4 **********/
+.infoTemporal4{
+  background-color: #F20505;
+
+ 
+  
+  height: 36em;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+
+}
+
+.infoTemporal4 iframe{
+  margin-left: 2em;
+  margin-top: 4em;
+  align-items: center;
+}
+
+.contenidoTemp4 p{
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bolder;
+ 
+}
+
+.portalEmpleo {
+  font-family: 'Roboto Slab', serif;
+  background-color: white;
+
+  margin: 3.125em;
+  
+  -webkit-box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+  -moz-box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+  box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+}
+
+.portalEmpleo h2{
+  font-weight: normal;
+  color: black;
+}
+
+.portalEmpleo p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height : 2.1875em;
+  color: black;
+}
+
+div.portalEmpleo img{
+  margin-top: 1em;
+}
+
+.moodle {
+  font-family: 'Roboto Slab', serif;
+  background-color: white;
+
+  margin: 3.125em;
+
+  -webkit-box-shadow: 0.4375em 0.4375em 1.875em 0.0625em rgba(0,0,0,0.51);
+  -moz-box-shadow: 0.4375em 0.4375em 1.875em 0.0625em rgba(0,0,0,0.51);
+  box-shadow: 0.4375em 0.4375em 1.875em 0.0625em rgba(0,0,0,0.51);
+}
+
+div.moodle img{
+  margin-top: 1em;
+}
+
+.moodle h2{
+  font-weight: normal;
+  color: black;
+}
+.moodle p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height : 2.19em;
+  color: black;
+}
+
+.biblioteca {
+  font-family: 'Roboto Slab', serif;
+  background-color: white;
+
+  margin: 50px;
+
+  -webkit-box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+  -moz-box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+  box-shadow: 7px 7px 1.875em 1px rgba(0,0,0,0.51);
+
+}
+
+.biblioteca h2{
+  font-weight: normal;
+  color: black;
+}
+
+.biblioteca p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height : 2.1875em;
+  color: black;
+}
+
+div.biblioteca img{
+  margin-top: 1em;
+}
+
+/******************** FOOTER ***********************/
+
+footer{
+  background-color: #323579;
+  
+  display: grid;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  
+
+  height: 25em;
+ 
+
+  justify-content: space-between;
+  
+
+  
+
+}
+
+
+
+
+footer div p{
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+
+
+  color: #F9A6DC;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+footer div.rrssFooter{
+  margin-top: 6.25em;
+  margin-left: 12.5em;
+}
+
+footer div.logoIES{
+  margin-top: 3.125em;
+  margin-left: 9.375em;
+}
+
+footer div.ministerio{
+  margin-top: 5em;
+  margin-left: 3.125em;
+}
+
+
+
+footer div p.email{
+  color: #F9A6DC;
+    
+}
+
+footer div p.direccion{
+  color: white;
+}
+
+footer div p.telefono{
+  color: #DC65C3;
+}
+
+
+
+
+
+.button {
+  font-family: Arial;
+  color: #332933;
+  font-size: 1em;
+  padding: 10px;
+  text-decoration: none;
+
+  -webkit-box-shadow: 0px 1px 3px #382a38;
+  -moz-box-shadow: 0px 1px 3px #382a38;
+  box-shadow: 0px 1px 3px #382a38;
+  border: solid #F20505 2px;
+  background: #ffffff;
+}
+.button:hover {
+  background: #F20505;
+  color: white;
+}
+
+.button-info{
+  padding: 0.625em;
+  font-weight: 600;
+  font-size: 0.8125em;
+  width: 3em;
+  background: none;
+  align-self: center;
+  justify-self: center;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+
+
+
+/* @media-query */
+  
+    @media screen and (min-width: 480px) {
+      nav ul {
+        display: flex;
+        justify-content:space-around;
+      }
+    }
+
+
