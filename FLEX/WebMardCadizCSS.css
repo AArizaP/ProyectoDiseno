@@ -1,0 +1,402 @@
+
+/************** DIV PRINCIPAL **************/
+
+.principal{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+header{
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   margin: 0;
+   margin-top: -0.5em;
+   width: 100%;
+   height: 17%;
+   position: fixed;
+   
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.fila-1{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1{
+  font-size: 2.9em;
+  font-family: 'Roboto Slab', serif;
+  justify-content: flex-start;
+}
+
+h6{
+  font-family: 'Oswald', sans-serif;
+}
+
+.logo{
+  height: 8em;
+  width: 8em;
+}
+
+.RRSS{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.RRSS img{
+  height: 2em;
+  width: 2em;
+}
+
+.menu-icono{
+  display: none;
+}
+
+/********** MENU *************/
+  nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.8em;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: .5em 1em;
+    font-size: 1.3em;
+    
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 1em;
+  }
+  
+  nav li a:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  
+
+
+/*************** CARRUSEL FOTOGRAFIAS *******************/
+
+.carrusel{
+  margin-top: 8em;
+  display: flex;
+  height:36em;
+  width:400%;
+  animation: animacion 25s infinite;
+
+}
+
+.carrusel div{
+  width: inherit;
+  height: inherit;
+}
+
+
+.carrusel img{
+  width: 100%;
+  min-width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+
+
+@keyframes animacion{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  20% {margin-left: -70%;}
+  40% {margin-left: -150%;}
+
+  60% {margin-left: -230%;}
+  80% {margin-left: -230%;}
+
+  80% {margin-left: -300%;}
+  
+
+}
+
+
+
+/********* INFO PRINCIPAL *********/
+.infoPrincip{
+  padding: 1em;
+  height: 40em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #332929;
+}
+
+.infoPrincip div{
+  height: 90%;
+  width: 20%;
+  padding: 0.5em;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.infoPrincip div p{
+  font-size: 1.1em;
+}
+
+
+.infoPrincip div h1{
+  font-weight: lighter;
+  text-align: center;
+}
+
+.infoPrincip div img{
+  margin-top: 1em;
+  height: 5em;
+  width: 5em;
+  border-radius: 70%;
+  object-fit: cover;
+}
+
+.infoPrincip div h1{
+  font-size: 2em;
+}
+
+.info24{
+  margin-top: 3em;
+}
+
+* p {
+  margin: 1em;
+  font-size: 22px;
+}
+
+.button-info{
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 1em;
+  width: 3em;
+  background: none;
+  align-self: center;
+  justify-self: center;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+
+
+
+/********* INFORMACION TEMPORAL 1 **********/
+.infoTemporal1{
+  background: rgb(230,150,150);
+  background: linear-gradient(90deg, rgba(230,150,150,1) 0%, rgba(255,200,200,1) 42%, rgba(235,143,143,1) 100%);
+  padding: 1em;
+  height: 36em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.infoTemporal1 img{
+  width: 40%;
+  height: 70%;
+  margin-top: 3em;
+}
+
+.contenidoTemp1 p{
+  font-size: 1.5em;
+}
+
+
+/********* INFORMACION TEMPORAL 2 **********/
+.infoTemporal2{
+  background-color: white;
+  padding: 1em;
+  height: 36em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.infoTemporal2 img{
+  width: 50%;
+  height: 90%;
+}
+
+.cuadroTemp2{
+  justify-content: center;
+  align-items: center;
+  margin:1em;
+  height: 100%;
+  box-shadow: 2px 2px 10px #666;
+  overflow: hidden;
+}
+
+.contenidoTemp2{
+  border: 2px solid black;
+  background-color: white;
+  margin: 2em;
+  height: 70%;
+}
+
+.contenidoTemp2 h1{
+  margin-left: 30px;
+}
+
+.button{
+  text-decoration: none;
+  margin-left: 40%;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+
+.button:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+}
+
+
+
+/********* PLATAFORMAS DEL CENTRO **********/
+.plataformas-centro{
+  padding: 2em;
+  margin-top: 2em;
+  height: 33em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.plataformas-centro h1{
+  text-align: center;
+  font-size: 3em;
+}
+
+.container-plataformas{
+  display: flex;
+  justify-content: space-around;
+}
+
+.plataforma img{
+  height: 18em;
+  width: 25em;
+}
+
+
+
+
+/********* DATOS DEL CENTRO **********/
+.datos-centro{
+  background-color: #E1CCCC;
+  padding: 2em;
+  margin-top: 2em;
+  height: 33em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contenido-datos{
+  background-color: white;
+  margin-top: -14em;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  justify-content: center; 
+  padding: 1em;
+}
+
+.contenido-datos h6{
+  font-size: 27px;
+  margin: 0;
+}
+
+.map{
+  box-shadow: 4px 4px 10px #666;;
+}
+
+/********* FOOTER **********/
+footer{
+  background-color: #323579;
+  padding: 2em;
+  height: 20em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+footer p{
+  text-align: center;
+  width: 100%;
+}
+
+.RRSS-footer img{
+  height: 3em;
+  width: 3em;
+}
+
+footer .logo{
+  height: 9em;
+  width: 12em;
+}
+
+.gobierno-de-españa{
+  width: 30%;
+  height: 25%;
+}
+
+footer em{
+  color: #F9A6DC;
+}
+
+.telefono{
+  color: #DC65C3;
+}
+/* @media-query */
+  
+    @media screen and (min-width: 480px) {
+      nav ul {
+        display: flex;
+        justify-content:space-around;
+      }
+    }
+
+    @media screen and (max-width: 1042px) {
+
+      .infoPrincip{
+        flex-wrap: wrap;
+      }
+
+    }
