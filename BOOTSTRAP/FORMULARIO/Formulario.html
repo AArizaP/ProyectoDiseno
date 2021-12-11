@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>FORMULARIO - I.E.S - Mar de Cádiz</title>
+  </head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+
+  <body>
+
+
+    <div class="container">
+        <form action="" class="m-auto" >
+
+        <!-- *******************************TITULO H3****************************************** -->
+        <header>
+
+            <img src="img/logoPNG.png" alt="logoMDC" height="100">
+            <h2 class="col-md">FORMULARIO - I.E.S - MAR DE CÁDIZ</h2>
+            
+        </header>
+        <!-- *******************************LINEA SEPARADORA****************************************** -->
+            <hr/>
+
+        <!-- *******************************TEXT NOMBRE****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="nombre2" class="col-md-2 col-form-label">NOMBRE</label>
+                <div class="col-md-4 "><input type="text" class="form-control form-control-lg" id="nombre2" name="nombre" placeholder="Introduzca su nombre" required></div>
+            </div>
+
+        <!-- *******************************TEXT APELLIDOS****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="apellidos3" class="col-md-2 col-form-label">APELLIDOS</label>
+                <div class="col-md-4"><input type="text" class="form-control form-control-lg" id="apellidos3" name="apellidos" placeholder="Introduzca sus apellidos" required></div>
+            </div>
+
+        <!-- *******************************TEXT EMAIL****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="email4" class="col-md-2 col-form-label">EMAIL</label>
+                <div class="col-md-4"><input type="email" class="form-control form-control-lg" id="email4" name="email" placeholder="Introduzca su email" required></div>
+            </div>
+
+        <!-- *******************************TEXT CONTRASEÑA****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="contrasena6" class="col-md-2 col-form-label">CONTRASEÑA</label>
+                <div class="col-md-4"><input type="password" class="form-control form-control-lg" id="contrasena6" name="contrasena" placeholder="Introduzca su contraseña"required></div>
+            </div>
+
+        <!-- *******************************TEXT REPETIR CONTRASEÑA****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="repita-su-contrasena7" class="col-md-2 col-form-label">REPITA SU CONTRASEÑA</label>
+                <div class="col-md-4"><input type="password" class="form-control form-control-lg" id="repita-su-contrasena7" name="repita-su-contrasena" placeholder="Introduzca de nuevo su contraseña" required></div>
+            </div>
+
+
+        <!-- *******************************RADIO GENERO****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="genero8" class="col-md-2 col-form-label">GÉNERO</label>
+                <div class="col-md-4">
+                    <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" name="genero" id="genero8_2" checked value=" Masculino"><label class="form-check-label custom-control-label" for="genero8_2"> Masculino</label></div>
+                    <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" name="genero" id="genero8_3" value=" Femenino"><label class="form-check-label custom-control-label" for="genero8_3"> Femenino</label></div>
+                    <div class="form-check custom-control custom-radio"><input class="form-check-input custom-control-input" type="radio" name="genero" id="genero8_4" value=" Prefiero no decirlo"><label class="form-check-label custom-control-label" for="genero8_4"> Prefiero no decirlo</label></div>
+                </div>
+            </div>
+
+
+        <!-- *******************************SELECT ACTIVIDAD EXTRAESCOLAR****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="actExtra" class="col-md-2 col-form-label">ACTIVIDAD EXTRAESCOLAR</label>
+                <div class="col-md-4"><select class="form-select custom-select custom-select-lg" id="actExtra">
+                        <option> Fútbol</option>
+                        <option> Baloncesto</option>
+                        <option> Tenis</option>
+                        <option> Ninguna</option>
+                    </select></div>
+            </div>
+
+
+
+        <!-- *******************************CHECK BOX CONSENTIMIENTOS****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="doy-mi-consentimiento-10" class="col-md-2 col-form-label">PERMITO: </label>
+                <div class="col-md-4">
+                    <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" value=" Términos de privacidad." required><label class="form-check-label custom-control-label" for="doy-mi-consentimiento-10_2"> Términos de privacidad.</label></div>
+                    <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" value=" Recibir próximas promociones."><label class="form-check-label custom-control-label" for="doy-mi-consentimiento-10_3"> Recibir próximas promociones.</label></div>
+                    <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" value=" Suscribirse a nuestra Newsletter."><label class="form-check-label custom-control-label" for="doy-mi-consentimiento-10_4"> Suscribirse a nuestra Newsletter.</label></div>
+                </div>
+            </div>
+        <!-- *******************************LINEA SEPARADORA****************************************** -->
+            <hr/>
+
+        <!-- *******************************BOTON REGISTRARSE****************************************** -->
+            <div class="form-group mb-3 row justify-content-center">
+                <label for="registrarse12" class="col-md-5 col-form-label"></label>
+                <div class="col-md-7"><button class="btn btn-primary btn-lg" type="submit">REGISTRARSE</button></div>
+            </div>
+
+        </form>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
